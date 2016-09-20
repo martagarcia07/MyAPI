@@ -3,10 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Http GET Demo"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,13 +12,17 @@
         android:id="@+id/my_button"
         android:onClick="onClick" />
 
-    <EditText
-        android:layout_margin="20dip"
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:minLines="15"
-        android:maxLines="15"
-        android:textSize="12sp"
-        android:editable="false"
-        android:id="@+id/my_edit"/>
+        android:text="Http GET Demo"
+        android:id="@+id/text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_edit"
+        android:maxLines = "1000"
+        android:scrollbars = "vertical"
+        />
 </LinearLayout>
